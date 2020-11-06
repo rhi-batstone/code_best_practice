@@ -61,5 +61,3 @@
 * Comments
 
 Author: "rhiannon.batstone@nrscotland.gov.uk"
-
-Date: `r Sys.Date()`
