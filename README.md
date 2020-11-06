@@ -3,7 +3,7 @@
 ### Do's
 * Make a README
 * Comment all code explaining what it is doing
-* (Lint)[https://github.com/jimhester/lintr] your code
+* [Lint](https://github.com/jimhester/lintr) your code
 * Put your contact details somewhere
 * Use meaningful variable names
 * Avoid absolute filepaths
