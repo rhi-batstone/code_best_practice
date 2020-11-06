@@ -36,7 +36,7 @@
     * Use `switch()` is great for running different logic based on a string
 
 
-### List of Code Smells: 
+### List of Code Smells - [Martin Fowler](https://martinfowler.com/books/refactoring.html)
 * Duplicated Code
 * Long Method
 * Large Class 
