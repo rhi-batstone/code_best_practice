@@ -8,7 +8,7 @@ Making code easier to understand and modify without changing it's behaviour
 ## Do's
 
 ### Make a README 
-  * Here is the GDS [guidance on writing READMEs](https://gds-way.cloudapps.digital/manuals/readme-guidance.html#writing-readmes)
+  * Here is the [GDS guidance on writing READMEs](https://gds-way.cloudapps.digital/manuals/readme-guidance.html#writing-readmes)
   * Helps the user: 
       * Understand what the project is
       * Learn how to use the project
@@ -37,7 +37,8 @@ Making code easier to understand and modify without changing it's behaviour
   * Break up and `source()` sections like data processing, and variable or function assigning
   
 ### Uncommenting code
-  * Don't rely on (un)commenting code to change behaviour   
+  * Don't rely on (un)commenting code to change behaviour
+      * You can quickly lose track!
   * Remove any just-in-case code you don’t actually need
   
 ### Avoid nested `for`/`ifelse` loops
@@ -50,16 +51,12 @@ Making code easier to understand and modify without changing it's behaviour
   
 ### Proper functions
   * Use the built in proper functions to simplify 
+  * `if(is.numeric())` is better than `if(class(x) == "numeric" || class(x) == "integer")`
   
 ### Stop early
   *  Move quick `stop()`s and `return()`s to the top of the function
   * [Example](https://github.com/rhi-batstone/code_best_practice/blob/main/early_stops.PNG) from [Jenny Bryan](https://github.com/jennybc/code-smells-and-feels/blob/master/2018-07_user-brisbane-bryan.pdf)  
   
-### Use `switch()`
-  * `switch()` is great for running different logic based on a string
-  
 ### Put your contact details somewhere
-
-
 
 ###### Author: rhiannon.batstone@nrscotland.gov.uk
