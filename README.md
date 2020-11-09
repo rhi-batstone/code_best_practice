@@ -30,7 +30,8 @@ Making code easier to understand and modify without changing it's behaviour
       * Work within an [R project](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects)
       * Use `getwd()` & `setwd()` 
       
-### Keep your scripts to a reasonable length (ideally less than 250 lines)
+### Keep your scripts to a reasonable length
+  * Ideally less than 250 lines
   * This keeps them more manageable
   * Break up and `source()` sections like data processing, and variable or function assigning
   
