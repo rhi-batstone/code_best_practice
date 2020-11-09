@@ -53,6 +53,7 @@ Making code easier to understand and modify without changing it's behaviour
   
 ### Stop early
   *  Move quick `stop()`s and `return()`s to the top of the function
+  * [Example](https://github.com/rhi-batstone/code_best_practice/blob/main/early_stops.PNG) from [Jenny Bryan](https://github.com/jennybc/code-smells-and-feels/blob/master/2018-07_user-brisbane-bryan.pdf)  
   
 ### Use `switch()`
   * `switch()` is great for running different logic based on a string
