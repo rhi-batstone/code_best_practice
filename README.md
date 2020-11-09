@@ -7,42 +7,44 @@
 * Making code easier to understand and modify without changing it's behaviour
 
 ## Do's
-#### Make a README 
-   * Here is the GDS [guidance on writing READMEs](https://gds-way.cloudapps.digital/manuals/readme-guidance.html#writing-readmes)
-   * Helps the user: 
-        * Understand what the project is
-        * Learn how to use the project
+### Make a README 
+  * Here is the GDS [guidance on writing READMEs](https://gds-way.cloudapps.digital/manuals/readme-guidance.html#writing-readmes)
+  * Helps the user: 
+      * Understand what the project is
+      * Learn how to use the project
    
-#### Comment all code 
+### Comment all code 
    * Explain what it is doing
-#### [Lint](https://github.com/jimhester/lintr) your code
+   
+###  [Lint](https://github.com/jimhester/lintr) your code
    * **Linting**: The automated checking of your source code for programmatic and stylistic errors.
-#### Put your contact details somewhere
+   
+### Put your contact details somewhere
    * So 
-#### Use meaningful variable names
+### Use meaningful variable names
    * 
-#### Avoid absolute filepaths
+### Avoid absolute filepaths
    * You could either:
          1. Use the library [`here()`](https://github.com/krlmlr/here)
          2. Work within an [R project](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects)
          3. Use `getwd()` & `setwd()` 
-#### Keep your scripts to a reasonable length (ideally less than 250 lines)
+### Keep your scripts to a reasonable length (ideally less than 250 lines)
    * This keeps them more manageable
    * Break up and `source()` sections like data processing, and variable or function assigning
-#### Uncommenting code
+### Uncommenting code
    * Don't rely on (un)commenting code to change behaviour
    * Remove any just-in-case code you don’t actually need
-#### Avoid nested `for` loops/`ifelse`
+### Avoid nested `for` loops/`ifelse`
    * Use casewhen()
    * Every `if` does not need an `else` if you `stop()` or `return()`
-#### Use Functions
+### Use Functions
    * A few little functions are better than one massive one
    * This includes small, well named, helper functions
-#### Proper functions
+### Proper functions
    * Use the built in proper functions to simplify 
-#### Stop early
+### Stop early
    *  Move quick `stop()`s and `return()`s to the top of the function
-#### `switch()`
+### `switch()`
    * Use `switch()` is great for running different logic based on a string
 
 
