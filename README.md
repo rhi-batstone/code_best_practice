@@ -7,16 +7,22 @@ Making code easier to understand and modify without changing it's behaviour
 
 ### Make a README 
   * Here is the [GDS guidance on writing READMEs](https://gds-way.cloudapps.digital/manuals/readme-guidance.html#writing-readmes)
+  * Include
+      * How to run the code
+      * A licence (SG default is [OGL](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/))
+      * An estimate of run time if it takes longer than a couple minutes
   * Helps the user: 
       * Understand what the project is
       * Learn how to use the project
 ### Comment all code 
-  * Explain _**what**_ it is doing and _**why**_ it is doing it
+  * Explain _**why**_ it is doing what it is doing
   * This will make it easier for you and other users to know what the code is for
   
-###  Lint your code
-  * **Linting**: The automated checking of your source code for programmatic and stylistic errors
-  * [Lintr](https://github.com/jimhester/lintr) checks your code for style, syntax errors and possible semantic issues
+### Use a style guide (the default for SG is the [Tidyverse styleguide](https://style.tidyverse.org/))
+  * Ob
+  * Lint your code
+      * **Linting**: The automated checking of your source code for programmatic and stylistic errors
+      * [Lintr](https://github.com/jimhester/lintr) checks your code for style, syntax errors and possible semantic issues
   
 ### Use meaningful variable and function names
   * `height_in_metres()` is better than `converter()` for a function that converts height into metres 
@@ -28,7 +34,6 @@ Making code easier to understand and modify without changing it's behaviour
   * You could either:
       * Use the library [`here()`](https://github.com/krlmlr/here)
       * Work within an [R project](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects)
-      * Use `getwd()` & `setwd()` 
       
 ### Keep your scripts to a reasonable length
   * Ideally less than 250 lines
@@ -40,17 +45,17 @@ Making code easier to understand and modify without changing it's behaviour
       * You can quickly lose track!
   * Remove any just-in-case code you don’t actually need
   
-### Avoid nested `for`/`ifelse` loops
+### Avoid deeply nested `for`/`ifelse` loops
   * Use `casewhen()`
   * Every `if` does not need an `else` if you `stop()` or `return()`
   
 ### Use Functions
+  * Do Not Repeat Yourself [(DRY)](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
   * A few little functions are better than one massive one
   * This includes small, well named, helper functions
-  
-### Proper functions
-  * Use the built in proper functions to simplify 
-  * `if(is.numeric())` is better than `if(class(x) == "numeric" || class(x) == "integer")`
+  * Proper functions
+      * Use the built in proper functions to simplify 
+      * `if(is.numeric())` is better than `if(class(x) == "numeric" || class(x) == "integer")`
   
 ### Stop early
   *  Move quick `stop()`s and `return()`s to the top of the function
