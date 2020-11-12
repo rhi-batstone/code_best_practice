@@ -69,6 +69,26 @@ Making code easier to understand and modify without changing it's behaviour
       * Use the built in proper functions to simplify 
       * `if(is.numeric())` is better than `if(class(x) == "numeric" || class(x) == "integer")`
  
+### Automate checks for input data
+  * Automate the new data checks so you don't miss anything unexpected. Especially if you expect the data to be updated
+  * Automatic checks for:
+      * Outliers
+      * NA's
+      * Class
+      * Expected column names
+      
   
+### Code in the open 
+  * Code in the open if you can [Data Science Scotland GitHub](https://github.com/DataScienceScotland)
+  * This encourages:
+      * The use of good code practice so others can read your code
+      * Collaboration
+      * Code reviews and [pull requests](https://docs.github.com/en/free-pro-team@latest/desktop/contributing-and-collaborating-using-github-desktop/creating-an-issue-or-pull-request)
+  * **DON'T**
+      * Share sensitive information such as unpublished data, API keys or passwords.
+  
+### Reduce object clutter
+  * If you have many objects, consider nesting them into a list to keep the environment tidy
+
 
 
