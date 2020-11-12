@@ -8,11 +8,11 @@ Making code easier to understand and modify without changing it's behaviour
 ### Make a README 
   * Here is the [GDS guidance on writing READMEs](https://gds-way.cloudapps.digital/manuals/readme-guidance.html#writing-readmes)
   * Include
-      * You contact details
+      * Your contact details
       * How to run the code
       * A licence (SG default is [OGL](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/))
       * An estimate of run time if it takes longer than a couple minutes
-  * Helps the user: 
+  * This helps the user: 
       * Understand what the project is
       * Learn how to use the project
 ### Comment all code 
@@ -33,14 +33,22 @@ Making code easier to understand and modify without changing it's behaviour
       * Use a readable [case style](https://medium.com/better-programming/string-case-styles-camel-pascal-snake-and-kebab-case-981407998841) 
   
 ### Avoid absolute filepaths
-  * You could either:
+  * **DO**
       * Use the library [`here()`](https://github.com/krlmlr/here)
       * Work within an [R project](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects)
+  * **DON'T** 
+      * Use absolute file paths as this reduces the reproducability of the code. 
+          * It won't work on another users computer. 
+          * It won't work if any files move
       
-### Keep your scripts to a reasonable length
-  * Ideally less than 250 lines
-  * This keeps them more manageable
-  * Break up and `source()` sections like data processing, and variable or function assigning
+### Keep your scripts short
+  * A reasonable length is ideally less than 250 lines
+      * This keeps them more manageable
+  * **DO**
+      * Break up and `source()` sections like data processing, and variable or function assigning
+  * **DON'T**
+      * Keep everything for a large project in one script
+          * For example, break up the UI, Server & Golbal sections of a large [Shiny app](https://shiny.rstudio.com/articles/basics.html)
   
 ### Uncommenting code
   * **DO**
