@@ -1,4 +1,3 @@
-###### Author: rhiannon.batstone@nrscotland.gov.uk
 # Code Best Practice
 Making code easier to understand and modify without changing it's behaviour
 
