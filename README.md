@@ -23,16 +23,14 @@ Making code easier to understand and modify without changing it's behaviour
       * Just explain _what_ it is doing
   
 ### Use a style guide (the default for SG is the [Tidyverse styleguide](https://style.tidyverse.org/))
-  * 
   * Lint your code
       * **Linting**: The automated checking of your source code for programmatic and stylistic errors
       * [Lintr](https://github.com/jimhester/lintr) checks your code for style, syntax errors and possible semantic issues
-  
-### Use meaningful variable and function names
-  * `height_in_metres()` is better than `converter()` for a function that converts height into metres 
-  * This makes it more obvious what your code is doing
-  * Makes your code more readable
-  * Use a readable [case style](https://medium.com/better-programming/string-case-styles-camel-pascal-snake-and-kebab-case-981407998841) 
+  * Use meaningful object names
+      * `height_in_metres()` is better than `converter()` for a function that converts height into metres 
+      * This makes it more obvious what your code is doing
+      * Makes your code more readable
+      * Use a readable [case style](https://medium.com/better-programming/string-case-styles-camel-pascal-snake-and-kebab-case-981407998841) 
   
 ### Avoid absolute filepaths
   * You could either:
@@ -45,13 +43,22 @@ Making code easier to understand and modify without changing it's behaviour
   * Break up and `source()` sections like data processing, and variable or function assigning
   
 ### Uncommenting code
-  * Don't rely on (un)commenting code to change behaviour
-      * You can quickly lose track!
-  * Remove any just-in-case code you don’t actually need
+  * **DO**
+      * Remove any just-in-case code you don’t actually need
+  * **DON'T** 
+      * Don't rely on (un)commenting code to change behaviour
+          * You can quickly lose track!
+ 
   
 ### Avoid deeply nested `for`/`ifelse` loops
-  * Use `casewhen()`
-  * Every `if` does not need an `else` if you `stop()` or `return()`
+  * **DO**
+      * Use `casewhen()`
+      * Every `if` does not need an `else` if you `stop()` or `return()`
+      * **Stop Early!** Move quick `stop()`s and `return()`s to the top of the function
+          * [Example](https://github.com/rhi-batstone/code_best_practice/blob/main/early_stops.PNG) from [Jenny Bryan](https://github.com/jennybc/code-smells-and-feels/blob/master/2018-07_user-brisbane-bryan.pdf)
+  * **DON'T**
+      * Don't use deeply nested if-else statements. 
+   
   
 ### Use Functions
   * **D**on't **R**epeat **Y**ourself [(DRY)](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
@@ -61,10 +68,7 @@ Making code easier to understand and modify without changing it's behaviour
   * Proper functions
       * Use the built in proper functions to simplify 
       * `if(is.numeric())` is better than `if(class(x) == "numeric" || class(x) == "integer")`
-  
-### Stop early
-  *  Move quick `stop()`s and `return()`s to the top of the function
-  * [Example](https://github.com/rhi-batstone/code_best_practice/blob/main/early_stops.PNG) from [Jenny Bryan](https://github.com/jennybc/code-smells-and-feels/blob/master/2018-07_user-brisbane-bryan.pdf)  
+ 
   
 
 
