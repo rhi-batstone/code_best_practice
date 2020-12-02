@@ -25,7 +25,7 @@ Making code easier to understand and modify without changing it's behaviour
       * How to run the code
       * A licence (SG default is [OGL](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/))
       * An estimate of run time if it takes longer than a couple minutes
-  * READMR's should help the user: 
+  * README's should help the user: 
       * Understand what the project is
       * Learn how to use the project
       
@@ -69,7 +69,7 @@ Making code easier to understand and modify without changing it's behaviour
   
 ## Nested for loops and ifelse statements
   * **DO**
-      * `casewhen()` creates an a more readable way of dealing with many ifelse statements. ifelse statements can be very useful but can become hard to understand if too many are used.
+      * `casewhen()` creates an a more readable way of dealing with many ifelse statements. `ifelse` statements can be very useful but can become hard to understand if too many are used.
       * **Stop Early!** Move quick `stop()`s and `return()`s to the top of the function
           * * When `if` statements `stop()` or `return()` they do not need an else
           * [Example](https://github.com/rhi-batstone/code_best_practice/blob/main/early_stops.PNG) from [Jenny Bryan](https://github.com/jennybc/code-smells-and-feels/blob/master/2018-07_user-brisbane-bryan.pdf)
